@@ -22,10 +22,10 @@ int main(){
         Suggested buffer length for SMTP: 1024 or more bytes.
         Returns the number of bytes read
     */
-    int socket_receive(int ssocket, char* buff, int buffsize) {
-        return read(ssocket,buff, buffsize);
-        //https://man7.org/linux/man-pages/man2/read.2.html
-    }
+    // int socket_receive(int ssocket, char* buff, int buffsize) {
+    //     return read(ssocket,buff, buffsize);
+    //     //https://man7.org/linux/man-pages/man2/read.2.html
+    // }
 
 
     /*
@@ -37,10 +37,10 @@ int main(){
 
         Returns the number of bytes sent
     */ 
-    int socket_send(int ssocket, char* msg, int msglen) {
-    return write(ssocket,msg,msglen);
-    //https://man7.org/linux/man-pages/man2/write.2.html
-    }
+    // int socket_send(int ssocket, char* msg, int msglen) {
+    // return write(ssocket,msg,msglen);
+    // //https://man7.org/linux/man-pages/man2/write.2.html
+    // }
     return 1;
 } // end main
 
